@@ -29,12 +29,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4 # СНАЧАЛА СКАЧИВАЕМ КОД
 
-      - name: Open the door (Setup SSH)
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          # Сюда вставляй имя секрета, который ты создал
-          ssh-private-key: ${{ secrets.ssh-for-env }}
-
       - name: Unzip and Push
         run: |
           # 1. Принудительно говорим гиту использовать SSH
@@ -47,7 +41,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@://github.com"
           git add assets/
-          git commit -m "Door opened, assets unzipped" || echo "No changes"
+          git commit -m "unzip the assets" || echo ""
           git push origin main
 
       - name: Setup Pages
