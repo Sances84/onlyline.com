@@ -26,6 +26,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4 # СНАЧАЛА СКАЧИВАЕМ КОД
+
       - name: Unzip all assets
         run: |
           if ls assets/*.zip 1> /dev/null 2>&1; then
@@ -35,15 +38,16 @@ jobs:
           else
             echo "No zip files found in assets/"
           fi
-      - name: Checkout
-        uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
