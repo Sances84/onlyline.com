@@ -1,3 +1,7 @@
+---
+layout: post
+title: "Index Page - OnlyLine.com"
+---
 <p align="center"><b>OnlyLine.com</b></p>
 Hello, i'm Ilya Ovcharenko, i creator of uncommercial project.<br>
 My birthday is will be come:<br>
