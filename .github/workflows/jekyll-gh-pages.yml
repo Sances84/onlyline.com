@@ -26,6 +26,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Unzip all assets
+        run: |
+          if ls assets/*.zip 1> /dev/null 2>&1; then
+            for f in assets/*.zip; do 
+              unzip -o "$f" -d assets/; 
+            done
+          else
+            echo "No zip files found in assets/"
+          fi
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
