@@ -2,6 +2,9 @@
 layout: post
 title: "Index Page - OnlyLine.com"
 ---
+<div style="text-align: center;">
+    <img src="https://sances84.github.io/onlyline.com/assets/logo.png" alt="Logo" style="width: 300px; height: auto;">
+</div>
 <p align="center"><b>OnlyLine.com</b></p>
 Hello, i'm Ilya Ovcharenko, i creator of uncommercial project.<br>
 My birthday is will be come:<br>
