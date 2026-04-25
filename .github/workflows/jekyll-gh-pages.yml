@@ -33,7 +33,8 @@ jobs:
         run: |
           if ls assets/*.zip 1> /dev/null 2>&1; then
             for f in assets/*.zip; do 
-              unzip -o "$f" -d assets/; 
+              # Флаг -j игнорирует папки внутри ZIP и кладет всё в assets/
+              unzip -o -j "$f" -d assets/ 
             done
           else
             echo "No zip files found in assets/"
