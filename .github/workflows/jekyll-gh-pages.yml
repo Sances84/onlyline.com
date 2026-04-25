@@ -29,19 +29,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4 # СНАЧАЛА СКАЧИВАЕМ КОД
 
-      - name: Unzip all assets
+      - name: Open the door (Setup SSH)
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          # Сюда вставляй имя секрета, который ты создал
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Unzip and Push
         run: |
-          if ls assets/*.zip 1> /dev/null 2>&1; then
-            mkdir -p _site/assets/
-            for f in assets/*.zip; do 
-              # Распаковываем в первую папку
-              unzip -o -j "$f" -d assets/
-              # Распаковываем во вторую папку
-              unzip -o -j "$f" -d _site/assets/
-            done
-          else
-            echo "No zip files found in assets/"
-          fi
+          # 1. Принудительно говорим гиту использовать SSH
+          git remote set-url origin git@github.com:${{ github.repository }}.git
+          
+          # 2. Твой unzip
+          for f in assets/*.zip; do unzip -o -j "$f" -d assets/; done
+          
+          # 3. Пушим результат
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@://github.com"
+          git add assets/
+          git commit -m "Door opened, assets unzipped" || echo "No changes"
+          git push origin main
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
