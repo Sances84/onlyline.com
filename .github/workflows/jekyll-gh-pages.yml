@@ -29,21 +29,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4 # СНАЧАЛА СКАЧИВАЕМ КОД
 
-      - name: Unzip and Push
-        run: |
-          # 1. Принудительно говорим гиту использовать SSH
-          git remote set-url origin git@github.com:${{ github.repository }}.git
-          
-          # 2. Твой unzip
-          for f in assets/*.zip; do unzip -o -j "$f" -d assets/; done
-          
-          # 3. Пушим результат
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@://github.com"
-          git add assets/
-          git commit -m "unzip the assets" || echo ""
-          git push origin main
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
         
