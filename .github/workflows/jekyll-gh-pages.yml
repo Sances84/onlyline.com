@@ -46,7 +46,7 @@ jobs:
       - name: Build with Jekyll
         run: |
           # Это заставит Jekyll принудительно включить распакованные папки
-          bundle exec jekyll build --destination ./_site
+          exec jekyll build --destination ./_site
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
