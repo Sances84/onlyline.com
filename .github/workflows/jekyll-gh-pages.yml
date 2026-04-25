@@ -33,7 +33,7 @@ jobs:
         uses: webfactory/ssh-agent@v0.9.0
         with:
           # Сюда вставляй имя секрета, который ты создал
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.ssh-for-env }}
 
       - name: Unzip and Push
         run: |
