@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ilya's Projects - OnlyLine.com"
+title: "Ilya's Projects | OnlyLine"
 ---
 <p align="center"><b>My Projects that i made</b></p><br>
 TRY THE PHUNLETS PACK №1 FOR AN ALGORYX PHYSICS SOFTWARE CALLED ALGODOO:<br>
@@ -16,7 +16,6 @@ The Mushroom AI neural engine:<br>
   <p><a href="https://ilya14.itch.io/mushroom-ai" target="_blank" rel="noopener noreferrer">Mushroom AI Architecture by Ilya14</a></p>
 </div><br>
 <script>
-{% raw %}
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 function renderWidget(id, src, href, text) {
@@ -69,5 +68,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ]);
 });
-{% endraw %}
 </script>

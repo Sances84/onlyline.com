@@ -1,5 +1,5 @@
 ---
-title: "Index Page - OnlyLine.com"
+title: "Index Page | OnlyLine"
 ---
 <div style="text-align: center;">
     <img src="https://sances84.github.io/onlyline.com/assets/logo.png" alt="Logo" style="width: 300px; height: auto;">
