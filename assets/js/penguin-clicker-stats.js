@@ -1,10 +1,14 @@
-const PENGUIN_CLICKER_API = "process.env.PENGUIN_CLICKER_API";
+const PENGUIN_CLICKER_API = window.PENGUINCLICKERSTATS || null;
 const STORAGE_KEY = "penguinClickerStats_v1";
 const UPDATE_INTERVAL_MS = 20 * 60 * 1000; // 3 times per hour
 const START_DATE_ISO = "2026-04-26T13:00:00";
 
 function getStatNumber(value) {
   return Number(value ?? 0) || 0;
+}
+
+if (!PENGUIN_CLICKER_API) {
+  console.error("Missing PENGUINCLICKERSTATS secret. Set window.PENGUINCLICKERSTATS before loading this script.");
 }
 
 function extractStats(data) {
@@ -72,6 +76,9 @@ function saveStats(stats) {
 
 async function fetchAndRender(container) {
   try {
+    if (!PENGUIN_CLICKER_API) {
+      throw new Error("Missing PENGUINCLICKERSTATS secret. Set window.PENGUINCLICKERSTATS before loading this script.");
+    }
     const response = await fetch(PENGUIN_CLICKER_API, { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
