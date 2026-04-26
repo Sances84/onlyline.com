@@ -5,7 +5,7 @@ title: "Index Page - OnlyLine.com"
 <div style="text-align: center;">
     <img src="https://sances84.github.io/onlyline.com/assets/logo.png" alt="Logo" style="width: 300px; height: auto;">
 </div>
-<p align="center">OnlyLine<b>.com</b></p>
+<p align="center"><b>OnlyLine</b>.com</p>
 Hello, i'm Ilya Ovcharenko, i creator of uncommercial project.<br>
 My birthday is will be come:<br>
 My 12th birthday - 2026 15 july<br>
