@@ -12,17 +12,30 @@ my 13th birthday - 2027 15 july<br>
 my 14th birthday - 2028 15 july<br>
 And more will be come...<br><br>
 
-[My projects that i made](https://sances84.github.io/onlyline.com/my-projects.md)
+[My projects that i made](https://sances84.github.io/onlyline.com/my-projects/)
 
 ====================<br>
-News Pages will be here:<br>
-{% for post in site.posts %}
+Newer News Pages will be here<br>
+Please note that loads 3 newer posts only.:<br>
+{% for post in site.posts limit: 3 %}
 <details>
   <summary>{{ post.title }} - {{ post.date | date: "%B %e, %Y" }}</summary>
   {{ post.content }}
 </details>
 {% endfor %}
 ====================<br>
+
+{% if site.posts.size > 3 %}
+====================<br>
+Older Posts can be found here including full newer pages:<br>
+{% for post in site.posts}
+<details>
+  <summary>{{ post.title }} - {{ post.date | date: "%B %e, %Y" }}</summary>
+  {{ post.content }}
+</details>
+{% endfor %}
+====================<br>
+{% endif %}
 
 [My scratch account](https://scratch.mit.edu/users/sances84){:target="_blank"}<br>
 [My itch.io account](https://ilya14.itch.io){:target="_blank"}<br><br>
