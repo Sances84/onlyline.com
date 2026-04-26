@@ -17,8 +17,10 @@ And more will be come...<br><br>
 ====================<br>
 News Pages will be here:<br>
 {% for post in site.posts %}
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  <p>{{ post.date | date: "%B %e, %Y" }} — {{ post.excerpt }}</p>
+<details>
+  <summary>{{ post.title }} - {{ post.date | date: "%B %e, %Y" }}</summary>
+  {{ post.content }}
+</details>
 {% endfor %}
 ====================<br>
 
