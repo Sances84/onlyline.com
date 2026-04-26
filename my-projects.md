@@ -16,6 +16,7 @@ The Mushroom AI neural engine:<br>
   <p><a href="https://ilya14.itch.io/mushroom-ai" target="_blank" rel="noopener noreferrer">Mushroom AI Architecture by Ilya14</a></p>
 </div><br>
 <script>
+{% raw %}
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 function renderWidget(id, src, href, text) {
@@ -49,23 +50,24 @@ async function loadWidgets(widgetIds) {
 document.addEventListener('DOMContentLoaded', () => {
   loadWidgets([
     {
-      id: 'widget-4511223',
-      src: 'https://itch.io/embed/4511223',
-      href: 'https://ilya14.itch.io/ilya14-algodoo-phunlets-part-1',
+      id: "widget-4511223",
+      src: "https://itch.io/embed/4511223",
+      href: "https://ilya14.itch.io/ilya14-algodoo-phunlets-part-1",
       text: "The Ilya14's Algodoo Phunlets pack №1 by Ilya14"
     },
     {
-      id: 'widget-4510734',
-      src: 'https://itch.io/embed/4510734',
-      href: 'https://ilya14.itch.io/drawing-app',
-      text: 'The Drawing App by Ilya14'
+      id: "widget-4510734",
+      src: "https://itch.io/embed/4510734",
+      href: "https://ilya14.itch.io/drawing-app",
+      text: "The Drawing App by Ilya14"
     },
     {
-      id: 'widget-4511050',
-      src: 'https://itch.io/embed/4511050',
-      href: 'https://ilya14.itch.io/mushroom-ai',
-      text: 'Mushroom AI Architecture by Ilya14'
+      id: "widget-4511050",
+      src: "https://itch.io/embed/4511050",
+      href: "https://ilya14.itch.io/mushroom-ai",
+      text: "Mushroom AI Architecture by Ilya14"
     }
   ]);
 });
+{% endraw %}
 </script>

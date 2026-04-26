@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Index Page - OnlyLine.com"
 ---
 <div style="text-align: center;">
