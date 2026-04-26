@@ -38,5 +38,6 @@ Older Posts can be found here including full newer pages:<br>
 {% endif %}
 
 [My scratch account](https://scratch.mit.edu/users/sances84){:target="_blank"}<br>
-[My itch.io account](https://ilya14.itch.io){:target="_blank"}<br><br>
+[My itch.io account](https://ilya14.itch.io){:target="_blank"}<br>
+[My penguinmod.com account](https://penguinmod.com/profile/?user=sances84){:target="_blank"}<br><br>
 Please note:You are can download and use, and mess around with my website source code [here!](https://github.com/Sances84/onlyline.com){:target="_blank"}<br>
