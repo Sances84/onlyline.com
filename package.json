@@ -1,0 +1,16 @@
+{
+  "name": "onlyline.com",
+  "version": "1.0.0",
+  "description": "Secure backend for stats caching",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

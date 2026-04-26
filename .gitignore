@@ -1,2 +1,17 @@
 assets/*.zip
 phunlets-pack-ilyas.html
+
+# Environment variables with secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Cache files
+penguin-stats-cache.json
+
+# Node/server
+node_modules/
+dist/
+*.log
