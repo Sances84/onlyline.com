@@ -1,0 +1,16 @@
+theme: minima
+
+title: OnlyLine
+description: "Ilya Ovcharenko - The CEO of uncommercial big project OnlyLine with Projects and experiments"
+markdown: kramdown
+permalink: pretty
+
+# Build settings for GitHub Pages
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

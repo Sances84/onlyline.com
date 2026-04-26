@@ -13,7 +13,7 @@ my 13th birthday - 2027 15 july<br>
 my 14th birthday - 2028 15 july<br>
 And more will be come...<br><br>
 
-[My projects that i made](https://sances84.github.io/onlyline.com/my-projects.md){:target="_blank"}
+[My projects that i made](https://sances84.github.io/onlyline.com/my-projects.md)
 
 ====================<br>
 News Pages will be here:<br>
