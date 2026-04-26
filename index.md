@@ -28,7 +28,7 @@ Please note that loads 3 newer posts only.:<br>
 {% if site.posts.size > 3 %}
 ====================<br>
 Older Posts can be found here including full newer pages:<br>
-{% for post in site.posts}
+{% for post in site.posts %}
 <details>
   <summary>{{ post.title }} - {{ post.date | date: "%B %e, %Y" }}</summary>
   {{ post.content }}
