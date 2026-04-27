@@ -17,9 +17,6 @@ The Mushroom AI neural engine:<br>
 </div><br>
 Play Penguin Clicker:<br>
 [Penguin Clicker](https://studio.penguinmod.com/#8439985638)<br>
-<div id="penguin-clicker-stats" class="widget-placeholder">
-  <p>Loading Penguin Clicker stats…</p>
-</div>
+
 
 <script src="{{ site.baseurl }}/assets/js/widgets.js"></script>
-<script src="{{ site.baseurl }}/assets/js/penguin-clicker-stats.js"></script>
