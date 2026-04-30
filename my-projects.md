@@ -16,7 +16,9 @@ The Mushroom AI neural engine:<br>
   <p><a href="https://ilya14.itch.io/mushroom-ai" target="_blank" rel="noopener noreferrer">Mushroom AI Architecture by Ilya14</a></p>
 </div><br>
 Play Penguin Clicker:<br>
-[Penguin Clicker](https://studio.penguinmod.com/#8439985638)<br>
-
+[Penguin Clicker](https://studio.penguinmod.com/#8439985638){:target="_blank"}<br>
+About more maintained projects:<br>
+We are can give for you link to maintained projects of the scratch.mit.edu platform.<br>
+[Enter here to see maintained projects](https://scratch.mit.edu/studios/51594494/){:target="_blank"}<br>
 
 <script src="{{ site.baseurl }}/assets/js/widgets.js"></script>
