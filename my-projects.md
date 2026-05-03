@@ -22,6 +22,6 @@ We are can give for you link to maintained projects of the scratch.mit.edu platf
 [Enter here to see maintained projects](https://scratch.mit.edu/studios/51594494/){:target="_blank"}<br>
 Annoucement (21:40 03.05.2026):<br>
 i annouce the Algobit extractor of phunlets! for google colab<br>
-[Run (requires google drive account for google drive import of .phz files](https://colab.research.google.com/drive/1HvKGg5-CZbIMv7Pyy2jF9ZLNtOMJwwJn?usp=sharing){:target="_blank"}<br>
+[Run (requires google drive account for google drive import of .phz files from google drive)](https://colab.research.google.com/drive/1HvKGg5-CZbIMv7Pyy2jF9ZLNtOMJwwJn?usp=sharing){:target="_blank"}<br>
 
 <script src="{{ site.baseurl }}/assets/js/widgets.js"></script>
